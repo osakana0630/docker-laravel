@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  app:
+    build: ./infra/php
+#    ホスト側の ./backend ディレクトリをappサービスのコンテナ内 /work へマウント
+    volumes:
+      - ./backend:/work
